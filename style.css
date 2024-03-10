@@ -2,21 +2,20 @@ html {
     background-color: #424242;
     color: white;
 }
+
 body {
     display: flex;
     height: 100vh;
     justify-content: center;
     align-items: center;
 }
+
 .container{
     display: grid;
     grid-template-rows: repeat(6, 1fr);
     grid-template-columns: repeat(5, 1fr);
     gap: 5px;
     width: 800px;
-}
-
-.items {
 }
 
 .bingo {
@@ -41,7 +40,6 @@ button {
     font-size: 250%;
     border-radius: 20px;
 }
-
 
 .filler {
     display: grid;
