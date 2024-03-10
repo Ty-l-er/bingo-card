@@ -12,21 +12,11 @@ body {
     display: grid;
     grid-template-rows: repeat(6, 1fr);
     grid-template-columns: repeat(5, 1fr);
-    gap: 20px;
+    gap: 5px;
     width: 800px;
 }
 
 .items {
-    display: flex;
-    color: white;
-    background-color: #277ef7;
-    width: 100px;
-    height: 100px;
-    justify-content: center;
-    align-items: center;
-    font-size: 500%;
-    border-radius: 20px;
-    
 }
 
 .bingo {
@@ -40,14 +30,7 @@ body {
     font-size: 500%;
 }
 
-@media (max-width: 680px) {
-    .container {
-        width: 680px;
-        gap: 15px;
-    }
-}
-
-.reset {
+button {
     display: flex;
     color: white;
     background-color: #277ef7;
@@ -59,29 +42,6 @@ body {
     border-radius: 20px;
 }
 
-.new {
-    display: flex;
-    color: white;
-    background-color: #277ef7;
-    width: 100px;
-    height: 100px;
-    justify-content: center;
-    align-items: center;
-    font-size: 250%;
-    border-radius: 20px;
-}
-
-.free {
-    display: flex;
-    color: white;
-    background-color: #277ef7;
-    width: 100px;
-    height: 100px;
-    justify-content: center;
-    align-items: center;
-    font-size: 250%;
-    border-radius: 20px;
-}
 
 .filler {
     display: grid;
@@ -93,7 +53,25 @@ body {
 }
 
 @media (width < 680px) {
+    .container {
+        width: 680px;
+        gap: 15px;
+    }
+    
     .filler {
         width: 100%
     }
+    
+    button {
+        width: 75%;
+        height: 100%;
+        font-size: 100%;
+    }
+
+    .bingo{
+        width: 75%;
+        height: 100%;
+        font-size: 100%;
+    }
 }
+
